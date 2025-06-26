@@ -290,7 +290,7 @@ public class NoteServiceImpl implements NoteService {
                     markdownContent.append("### [")
                             .append(question.getTitle())
                             .append("]")
-                            .append("(https://notes.kamacoder.com/questions/")
+                            .append("(https://notes.lsj.com/questions/")
                             .append(question.getQuestionId())
                             .append(")\n");
 
