@@ -53,7 +53,7 @@ public class EmailTaskConsumer {
             SimpleMailMessage mailMessage = new SimpleMailMessage();
             mailMessage.setFrom(from);
             mailMessage.setTo(email);
-            mailMessage.setSubject("卡码笔记- 验证码");
+            mailMessage.setSubject("笔记- 验证码");
             mailMessage.setText("您的验证码是：" + verificationCode + "，有效期" + 5 + "分钟，请勿泄露给他人。");
 
             mailSender.send(mailMessage);
