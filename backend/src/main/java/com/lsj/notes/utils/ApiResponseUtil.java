@@ -1,6 +1,9 @@
 package com.lsj.notes.utils;
 
 import com.lsj.notes.model.base.ApiResponse;
+import com.lsj.notes.model.base.Pagination;
+import com.lsj.notes.model.base.PaginationApiResponse;
+import com.lsj.notes.model.base.TokenApiResponse;
 import org.springframework.http.HttpStatus;
 
 public class ApiResponseUtil {
@@ -38,4 +41,5 @@ public class ApiResponseUtil {
     public static <T> PaginationApiResponse<T> success(String msg, T data, Pagination pagination) {
         return new PaginationApiResponse<>(HttpStatus.OK.value(), msg, data, pagination);
     }
+
 }
